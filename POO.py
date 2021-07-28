@@ -12,12 +12,13 @@ hotel=Hotel(numero_maximo_huespedes=50, lugares_de_estacionamiento=20)
 print(hotel.lugares_de_estacionamiento)
 
 class Hotel:
+    #definimos los metodos
     def anadir_huespedes(self, cantidad_de_huespedes):
         self.huespedes += cantidad_de_huespedes
 
-    def checkout(self, cantidad_de_huespedes):
+    def checkout(self, cantidad_de_huespedes): #huespedes se van
         self.huespedes -= cantidad_de_huespedes
-
+        
     def ocupacion_total(self):
         return self.huespedes
 
@@ -25,4 +26,4 @@ class Hotel:
 hotel = Hotel(50, 20)
 hotel.anadir_huespedes(3)
 hotel.checkout(1)
-hotel.ocupacion_total() # 2
+hotel.ocupacion_total() 
